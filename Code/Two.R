@@ -15,3 +15,17 @@ target <-churn~.
 dt <-rpart(target,data=data)
 plot(dt)
 text(dt)
+
+#normalisation in R using max-min method 
+#Function normalize can be reused 
+normalize <-function(x){
+   return((x-min(x))/(max(x)-min(x)))
+}
+normalized_data <-as.data.frame(lapply(data1,normalize))
+plot(cor(normalized_data,normalized_data$churn))
+
+#Normalization using Z-score (direct function)
+
+Z_normalized_data <-as.data.frame(scale(data1))
+plot(cor(Z_normalized_data,Z_normalized_data$churn))
+
