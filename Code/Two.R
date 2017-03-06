@@ -3,7 +3,10 @@ library(readxl)
 new <- read_excel("~/Desktop/new.xlsx")
 attach(new)
 #creating a new data frame for this 
-data =data.frame(new)
+data_uncleaned =data.frame(new)
+
+#Cleaning script 
+data =data.frame(replace(data_uncleaned,is.na(data_uncleaned),"999"))
 
 #defining a correlation value variable corr
 corr <-cor(data,churn)
