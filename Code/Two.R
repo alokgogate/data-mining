@@ -32,3 +32,9 @@ plot(cor(normalized_data,normalized_data$churn))
 Z_normalized_data <-as.data.frame(scale(data1))
 plot(cor(Z_normalized_data,Z_normalized_data$churn))
 
+#Dividing a dataframe 
+sub_data <-subset(data,data$Rev_Mean<=50)
+
+#Selected 50 because of the histogram of Rev_Mean
+hist(data$Rev_Mean)
+
