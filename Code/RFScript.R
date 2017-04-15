@@ -1,7 +1,7 @@
 library (party)
 library (randomForest)
 
-inputData <- read.csv("C:/Users/ABS/Documents/R/churn-project/cleaned_sample_data.csv",header = T)
+inputData <- read.csv("https://raw.githubusercontent.com/alokgogate/data-mining/master/Data/rf_data.csv", header = T)
 input.roughfix <- na.roughfix(inputData)
 input.roughfix$churn <- as.character(input.roughfix$churn)
 input.roughfix$churn <- as.factor(input.roughfix$churn)
