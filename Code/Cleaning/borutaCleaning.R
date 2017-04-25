@@ -88,9 +88,18 @@ getSelectedAttributes(final.boruta, withTentative = F)
 boruta.df <- attStats(final.boruta)
 print(boruta.df)
 
-
 # -----------------------------------------------------------------
 # ----------------------FOR CHECKING PURPOSE-----------------------
 # -----------------------------------------------------------------
 str(clean_data)
 summary(clean_data)
+
+
+
+library(xlsx)
+
+final_data = pattern_data[, names(pattern_data) %in% c("rev_Mean", "mou_Mean", "totmrc_Mean", 
+"mou_Range", "mou_cvce_Mean", "mou_rvce_Mean", "owylis_vce_Mean", "mouowylisv_Mean", 
+"totrev", "avgrev", "avg3mou", "avg6mou", "hnd_webcap", "eqpdays")]
+
+write.table(pattern_data, "churn_boruta_cleaned_1k.csv") 
