@@ -1,0 +1,174 @@
+Column ID,Column Name,Data Type,Length,Format,Description
+173,Customer_ID,Num,8,BEST12. F12.,Unique tournament specific customer ID  
+155,HHstatin,Char,1,$F1. $F1.,Prem Household Status Ind   
+121,REF_QTY,Num,8,F5. F5.,Total Number of Referrals   
+98,actvsubs,Num,4,BEST12. F12.,Number of Active Subs   
+110,adjmou,Num,8,BEST12. F12.,adjusted minutes of usage   
+111,adjqty,Num,8,BEST12. F12.,adjusted quantity of calls   
+109,adjrev,Num,8,BEST12. F12.,adjusted revenue     
+150,adults,Char,1,$F1. $F1.,Number of Adults in HH  
+145,age1,Char,2,$F2. $F2.,Age of 1st household member  
+146,age2,Char,2,$F2. $F2.,Age of 2nd household member  
+127,area,Char,30,$F30. $F30.,Area      
+102,asl_flag,Char,1,$F1. $F1.,Account Spending Limits    
+54,attempt_Mean,Num,8,BEST12. F12.,Attempted Calls     
+91,attempt_Range,Num,8,BEST12. F12.,Attempted Calls     
+115,avg3mou,Num,4,BEST12. F12.,Subs Last 3 months avg: MOU 
+116,avg3qty,Num,4,BEST12. F12.,Subs Last 3 months avg: QTY 
+117,avg3rev,Num,4,BEST12. F12.,Subs Last 3 months avg: REV 
+118,avg6mou,Num,4,BEST12. F12.,Subs Last 6 months avg: MOU 
+119,avg6qty,Num,4,BEST12. F12.,Subs Last 6 months avg: QTY 
+120,avg6rev,Num,4,BEST12. F12.,Subs Last 6 months avg: REV 
+113,avgmou,Num,8,BEST12. F12.,average minutes of use   
+114,avgqty,Num,8,BEST12. F12.,average number of calls   
+112,avgrev,Num,8,BEST12. F12.,average revenue     
+24,blck_dat_Mean,Num,8,BEST12. F12.,nbr_blocked_calls_data (Failed Calls)    
+61,blck_dat_Range,Num,8,BEST12. F12.,nbr_blocked_calls_data (Failed Calls)    
+23,blck_vce_Mean,Num,8,BEST12. F12.,nbr_blocked_calls_voice (Failed Calls)    
+60,blck_vce_Range,Num,8,BEST12. F12.,nbr_blocked_calls_voice (Failed Calls)    
+56,callfwdv_Mean,Num,8,BEST12. F12.,Call Forward Calls    
+93,callfwdv_Range,Num,8,BEST12. F12.,Call Forward Calls    
+57,callwait_Mean,Num,8,BEST12. F12.,Call Wait Calls    
+94,callwait_Range,Num,8,BEST12. F12.,Call Wait Calls    
+170,car_buy,Char,7,$F7. $F7.,New or Used car buyer  
+154,cartype,Char,1,$F1. $F1.,Dominant Vehicle Lifestyle    
+35,cc_mou_Mean,Num,8,BEST12. F12.,nbr_unrnd_MOU_cust_care_calls      
+72,cc_mou_Range,Num,8,BEST12. F12.,nbr_unrnd_MOU_cust_care_calls      
+34,ccrndmou_Mean,Num,8,BEST12. F12.,Customer Care Rounded MOU   
+71,ccrndmou_Range,Num,8,BEST12. F12.,Customer Care Rounded MOU   
+19,change_mou,Num,8,BEST12. F12.,% change of minutes of use 
+20,change_rev,Num,8,BEST12. F12.,% change of revenue   
+149,children,Char,1,$F1. $F1.,Children present in HH   
+95,churn,Num,8,BEST12. F12.,Dependent Variable: Churn between 31-60 days after
+32,comp_dat_Mean,Num,8,BEST12. F12.,nbr_calls_completed_data      
+69,comp_dat_Range,Num,8,BEST12. F12.,nbr_calls_completed_data      
+31,comp_vce_Mean,Num,8,BEST12. F12.,nbr_calls_completed_voice      
+68,comp_vce_Range,Num,8,BEST12. F12.,nbr_calls_completed_voice      
+55,complete_Mean,Num,8,BEST12. F12.,Completed Calls     
+92,complete_Range,Num,8,BEST12. F12.,Completed Calls     
+101,crclscod,Char,2,$2. $2.,Credit Class Code    
+169,creditcd,Char,1,$F1. $F1.,Credit Card Indicator    
+99,crtcount,Num,4,BEST12. F12.,Number of Courtesy Credits   
+126,csa,Char,10,$10. $10.,Communications Service Area    
+33,custcare_Mean,Num,8,BEST12. F12.,Customer Care Calls    
+70,custcare_Range,Num,8,BEST12. F12.,Customer Care Calls    
+4,da_Mean,Num,8,BEST12. F12.,directory_assisted mean     
+13,da_Range,Num,8,BEST12. F12.,directory_assisted range     
+8,datovr_Mean,Num,8,BEST12. F12.,data overuse mean    
+17,datovr_Range,Num,8,BEST12. F12.,data overuse range    
+125,div_type,Char,3,$F3. $3.,Division Type Code    
+53,drop_blk_Mean,Num,8,BEST12. F12.,Drop/Block Calls     
+90,drop_blk_Range,Num,8,BEST12. F12.,Drop/Block Calls     
+22,drop_dat_Mean,Num,8,BEST12. F12.,nbr_dropped_calls_data (Failed Calls)    
+59,drop_dat_Range,Num,8,BEST12. F12.,nbr_dropped_calls_data (Failed Calls)    
+21,drop_vce_Mean,Num,8,BEST12. F12.,nbr_dropped_calls_voice (Failed Calls)    
+58,drop_vce_Range,Num,8,BEST12. F12.,nbr_dropped_calls_voice (Failed Calls)    
+128,dualband,Char,1,$F1. $F1.,Dualband      
+158,dwllsize,Char,1,$F1. $F1.,Dwelling Size     
+142,dwlltype,Char,1,$F1. $F1.,Dwelling Unit Type    
+160,educ1,Char,1,$F1. $F1.,Education for 1st Individual   
+172,eqpdays,Num,8,BEST12. F12.,Number of days of the current equipment
+163,ethnic,Char,1,$F1. $F1.,Ethnicity Roll-Up Code    
+159,forgntvl,Char,1,$F1. $F1.,Foreign Travel Dummy Var   
+130,hnd_price,Num,8,DOLLAR16.15 F10.,Handset Price     
+135,hnd_webcap,Char,4,$F4. $F4.,Handset Web Capable    
+152,income,Char,1,$F1. $F1.,Estimated Income     
+151,infobase,Char,1,$F1. $F1.,Infobase Match     
+36,inonemin_Mean,Num,8,BEST12. F12.,Inbound Calls Less Than One Minute 
+73,inonemin_Range,Num,8,BEST12. F12.,Inbound Calls Less Than One Minute 
+43,iwylis_vce_,Num,8,BEST12. F12.,nbr_inbound_wylis2wylis_voice_call Mean     
+80,iwylis_vce_,Num,8,BEST12. F12.,nbr_inbound_wylis2wylis_voice_call Range     
+164,kid0_2,Char,1,$F1. $F1.,Kid 0-2 years of age in HH
+167,kid11_15,Char,1,$F1. $F1.,Kid 11-15 years of age in HH
+168,kid16_17,Char,1,$F1. $F1.,Kid 16-17 years of age in HH
+165,kid3_5,Char,1,$F1. $F1.,Kid 3-5 years of age in HH
+166,kid6_10,Char,1,$F1. $F1.,Kid 6-10 years of age in HH
+133,last_swap,Num,4,MMDDYY10. F10.,Date of Last Phone Swap  
+141,lor,Char,2,$F2. $F2.,Length of Residence    
+156,mailflag,Char,1,$F1. $F1.,DMA Do Not Mail Flag  
+144,mailordr,Char,1,$F1. $F1.,Mail Order Buyer    
+148,mailresp,Char,1,$F1. $F1.,Mail Responder     
+143,marital,Char,1,$F1. $F1.,Marital Status     
+134,models,Num,4,BEST12. F12.,# Models Issued    
+96,months,Num,4,BEST12. F12.,Months in Service    
+2,mou_Mean,Num,8,F14.10 F14.2,MINUTE_QTY      
+11,mou_Range,Num,8,F14.2 F14.2,MINUTE_QTY      
+39,mou_cdat_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_completed_data_calls      
+76,mou_cdat_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_completed_data_calls      
+38,mou_cvce_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_completed_voice_calls      
+75,mou_cvce_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_completed_voice_calls      
+52,mou_opkd_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_off_peak_data_calls      
+89,mou_opkd_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_off_peak_data_calls      
+51,mou_opkv_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_off_peak_voice_calls      
+88,mou_opkv_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_off_peak_voice_calls      
+48,mou_pead_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_peak_data_calls      
+85,mou_pead_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_peak_data_calls      
+47,mou_peav_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_peak_voice_calls      
+84,mou_peav_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_peak_voice_calls      
+40,mou_rvce_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_received_voice_calls      
+77,mou_rvce_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_received_voice_calls      
+44,mouiwylisv_,Num,8,BEST12. F12.,nbr_unrnd_mou_inbnd_wylis2wylis_voice_calls mean     
+81,mouiwylisv_,Num,8,BEST12. F12.,nbr_unrnd_mou_inbnd_wylis2wylis_voice_calls range     
+42,mouowylisv_,Num,8,BEST12. F12.,nbr_unrnd_mou_outbnd_wylis2wylis_voice_call mean     
+79,mouowylisv_,Num,8,BEST12. F12.,nbr_unrnd_mou_outbnd_wylis2wylis_voice_call range     
+137,mtrcycle,Char,1,$F1. $F1.,Motorcycle Indicator     
+100,new_cell,Char,1,$1. $1.,New Cell Phone User   
+153,numbcars,Char,1,$F1. $F1.,Known Number of Vehicles   
+139,occu1,Char,1,$F1. $F1.,Occupation for 1st Individual   
+50,opk_dat_Mean,Num,8,BEST12. F12.,nbr_off_peak_data_calls      
+87,opk_dat_Range,Num,8,BEST12. F12.,nbr_off_peak_data_calls      
+49,opk_vce_Mean,Num,8,BEST12. F12.,nbr_off_peak_voice_calls      
+86,opk_vce_Range,Num,8,BEST12. F12.,nbr_off_peak_voice_calls      
+5,ovrmou_Mean,Num,8,BEST12. F12.,"Overage minutes of use, mean  "
+14,ovrmou_Range,Num,8,BEST12. F12.,"Overage minutes of use, range  "
+6,ovrrev_Mean,Num,8,BEST12. F12.,"Overage revenue, mean    "
+15,ovrrev_Range,Num,8,BEST12. F12.,"Overage revenue, range    "
+140,ownrent,Char,1,$F1. $F1.,Home Owner/Renter Status    
+41,owylis_vce_,Num,8,BEST12. F12.,nbr_outbound_wylis2wylis_voice_calls Mean     
+78,owylis_vce_,Num,8,BEST12. F12.,nbr_outbound_wylis2wylis_voice_calls Range     
+162,pcowner,Char,1,$F1. $F1.,PC Owner Dummy Var   
+46,peak_dat_Mean,Num,8,BEST12. F12.,nbr_peak_data_calls      
+83,peak_dat_Range,Num,8,BEST12. F12.,nbr_peak_data_calls      
+45,peak_vce_Mean,Num,8,BEST12. F12.,nbr_peak_voice_calls (inbnd & outbnd)   
+82,peak_vce_Range,Num,8,BEST12. F12.,nbr_peak_voice_calls (inbnd & outbnd)   
+132,phones,Num,4,BEST12. F12.,# Handsets Issued    
+28,plcd_dat_Mean,Num,8,BEST12. F12.,nbr_calls_placed_data(attempts)      
+65,plcd_dat_Range,Num,8,BEST12. F12.,nbr_calls_placed_data(attempts)      
+27,plcd_vce_Mean,Num,8,BEST12. F12.,nbr_calls_placed_voice (attempts)     
+64,plcd_vce_Range,Num,8,BEST12. F12.,nbr_calls_placed_voice (attempts)     
+131,pre_hnd_price,Num,8,DOLLAR16.15 F10.,Previous Handset Price    
+124,prizm_social_,Char,2,$F2. $F2.,Social Group Letter Only one  
+161,proptype,Char,1,$F1. $F1.,Property Type Detail    
+30,recv_sms_Mean,Num,8,BEST12. F12.,nbr_calls_received_sms      
+67,recv_sms_Range,Num,8,BEST12. F12.,nbr_calls_received_sms      
+29,recv_vce_Mean,Num,8,BEST12. F12.,nbr_calls_received_voice      
+66,recv_vce_Range,Num,8,BEST12. F12.,nbr_calls_received_voice      
+129,refurb_new,Char,1,$F1. $F1.,Handset Refurb or New   
+171,retdays,Num,8,BEST12. F12.,Number of days since last rentition call
+1,rev_Mean,Num,8,F13.10 F13.2,CHARGE_AMT      
+10,rev_Range,Num,8,F13.2 F13.2,CHARGE_AMT      
+103,rmcalls,Num,8,F12. F12.,Roaming Calls     
+104,rmmou,Num,8,F14.2 F14.2,RMMOU      
+105,rmrev,Num,8,F13.2 F13.2,RMREV      
+9,roam_Mean,Num,8,BEST12. F12.,"roaming, mean     "
+18,roam_Range,Num,8,BEST12. F12.,"roaming, range     "
+138,rv,Char,1,$F1. $F1.,RV Indicator     
+157,solflag,Char,1,$F1. $F1.,Infobase No Phone Sol Flag  
+37,threeway_Mean,Num,8,BEST12. F12.,Three Way Calls    
+74,threeway_Range,Num,8,BEST12. F12.,Three Way Calls    
+123,tot_acpt,Num,8,BEST12. F12.,Total Offers Accepted From Retention Team 
+122,tot_ret,Num,8,BEST12. F12.,Total Calls into Retention Team  
+106,totcalls,Num,4,F12. F12.,TOTCALLS      
+107,totmou,Num,8,F12.7 F12.,TOTMOU      
+3,totmrc_Mean,Num,8,BEST12. F12.,"total MRC, mean    "
+12,totmrc_Range,Num,8,BEST12. F12.,"total MRC, range    "
+108,totrev,Num,8,F13.2 F13.2,TOTREV      
+136,truck,Char,1,$F1. $F1.,Truck Indicator     
+26,unan_dat_Mean,Num,8,BEST12. F12.,nbr_unanswered_calls_data      
+63,unan_dat_Range,Num,8,BEST12. F12.,nbr_unanswered_calls_data      
+25,unan_vce_Mean,Num,8,BEST12. F12.,nbr_unanswered_calls_voice      
+62,unan_vce_Range,Num,8,BEST12. F12.,nbr_unanswered_calls_voice      
+97,uniqsubs,Num,4,BEST12. F12.,Number of Uniq Subs   
+7,vceovr_Mean,Num,8,BEST12. F12.,"voice overage, mean    "
+16,vceovr_Range,Num,8,BEST12. F12.,"voice overage, range    "
+147,wrkwoman,Char,1,$F1. $F1.,Working Woman in HH   

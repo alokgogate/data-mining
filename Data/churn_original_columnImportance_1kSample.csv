@@ -1,0 +1,174 @@
+Column ID,Column Name,Data Type,Length,Format,Description,Importance
+1,rev_Mean,Num,8,F13.10 F13.2,CHARGE_AMT      ,Boruta confirmed
+2,mou_Mean,Num,8,F14.10 F14.2,MINUTE_QTY      ,Boruta confirmed
+3,totmrc_Mean,Num,8,BEST12. F12.,"total MRC, mean    ",Boruta confirmed
+4,da_Mean,Num,8,BEST12. F12.,directory_assisted mean     ,
+5,ovrmou_Mean,Num,8,BEST12. F12.,"Overage minutes of use, mean  ",
+6,ovrrev_Mean,Num,8,BEST12. F12.,"Overage revenue, mean    ",
+7,vceovr_Mean,Num,8,BEST12. F12.,"voice overage, mean    ",
+8,datovr_Mean,Num,8,BEST12. F12.,data overuse mean    ,
+9,roam_Mean,Num,8,BEST12. F12.,"roaming, mean     ",
+10,rev_Range,Num,8,F13.2 F13.2,CHARGE_AMT      ,
+11,mou_Range,Num,8,F14.2 F14.2,MINUTE_QTY      ,Boruta confirmed
+12,totmrc_Range,Num,8,BEST12. F12.,"total MRC, range    ",
+13,da_Range,Num,8,BEST12. F12.,directory_assisted range     ,
+14,ovrmou_Range,Num,8,BEST12. F12.,"Overage minutes of use, range  ",
+15,ovrrev_Range,Num,8,BEST12. F12.,"Overage revenue, range    ",
+16,vceovr_Range,Num,8,BEST12. F12.,"voice overage, range    ",
+17,datovr_Range,Num,8,BEST12. F12.,data overuse range    ,
+18,roam_Range,Num,8,BEST12. F12.,"roaming, range     ",
+19,change_mou,Num,8,BEST12. F12.,% change of minutes of use ,Missing data pattern count = 0.007 but still removed
+20,change_rev,Num,8,BEST12. F12.,% change of revenue   ,Missing data pattern count = 0.007 but still removed
+21,drop_vce_Mean,Num,8,BEST12. F12.,nbr_dropped_calls_voice (Failed Calls)    ,
+22,drop_dat_Mean,Num,8,BEST12. F12.,nbr_dropped_calls_data (Failed Calls)    ,
+23,blck_vce_Mean,Num,8,BEST12. F12.,nbr_blocked_calls_voice (Failed Calls)    ,
+24,blck_dat_Mean,Num,8,BEST12. F12.,nbr_blocked_calls_data (Failed Calls)    ,
+25,unan_vce_Mean,Num,8,BEST12. F12.,nbr_unanswered_calls_voice      ,
+26,unan_dat_Mean,Num,8,BEST12. F12.,nbr_unanswered_calls_data      ,
+27,plcd_vce_Mean,Num,8,BEST12. F12.,nbr_calls_placed_voice (attempts)     ,
+28,plcd_dat_Mean,Num,8,BEST12. F12.,nbr_calls_placed_data(attempts)      ,
+29,recv_vce_Mean,Num,8,BEST12. F12.,nbr_calls_received_voice      ,
+30,recv_sms_Mean,Num,8,BEST12. F12.,nbr_calls_received_sms      ,
+31,comp_vce_Mean,Num,8,BEST12. F12.,nbr_calls_completed_voice      ,
+32,comp_dat_Mean,Num,8,BEST12. F12.,nbr_calls_completed_data      ,
+33,custcare_Mean,Num,8,BEST12. F12.,Customer Care Calls    ,
+34,ccrndmou_Mean,Num,8,BEST12. F12.,Customer Care Rounded MOU   ,
+35,cc_mou_Mean,Num,8,BEST12. F12.,nbr_unrnd_MOU_cust_care_calls      ,
+36,inonemin_Mean,Num,8,BEST12. F12.,Inbound Calls Less Than One Minute ,
+37,threeway_Mean,Num,8,BEST12. F12.,Three Way Calls    ,
+38,mou_cvce_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_completed_voice_calls      ,Boruta confirmed
+39,mou_cdat_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_completed_data_calls      ,
+40,mou_rvce_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_received_voice_calls      ,Boruta confirmed
+41,owylis_vce_,Num,8,BEST12. F12.,nbr_outbound_wylis2wylis_voice_calls Mean     ,Boruta confirmed
+42,mouowylisv_,Num,8,BEST12. F12.,nbr_unrnd_mou_outbnd_wylis2wylis_voice_call mean     ,Boruta confirmed
+43,iwylis_vce_,Num,8,BEST12. F12.,nbr_inbound_wylis2wylis_voice_call Mean     ,
+44,mouiwylisv_,Num,8,BEST12. F12.,nbr_unrnd_mou_inbnd_wylis2wylis_voice_calls mean     ,
+45,peak_vce_Mean,Num,8,BEST12. F12.,nbr_peak_voice_calls (inbnd & outbnd)   ,
+46,peak_dat_Mean,Num,8,BEST12. F12.,nbr_peak_data_calls      ,
+47,mou_peav_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_peak_voice_calls      ,
+48,mou_pead_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_peak_data_calls      ,
+49,opk_vce_Mean,Num,8,BEST12. F12.,nbr_off_peak_voice_calls      ,
+50,opk_dat_Mean,Num,8,BEST12. F12.,nbr_off_peak_data_calls      ,
+51,mou_opkv_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_off_peak_voice_calls      ,
+52,mou_opkd_Mean,Num,8,BEST12. F12.,nbr_unrnd_mou_off_peak_data_calls      ,
+53,drop_blk_Mean,Num,8,BEST12. F12.,Drop/Block Calls     ,
+54,attempt_Mean,Num,8,BEST12. F12.,Attempted Calls     ,
+55,complete_Mean,Num,8,BEST12. F12.,Completed Calls     ,
+56,callfwdv_Mean,Num,8,BEST12. F12.,Call Forward Calls    ,
+57,callwait_Mean,Num,8,BEST12. F12.,Call Wait Calls    ,
+58,drop_vce_Range,Num,8,BEST12. F12.,nbr_dropped_calls_voice (Failed Calls)    ,
+59,drop_dat_Range,Num,8,BEST12. F12.,nbr_dropped_calls_data (Failed Calls)    ,
+60,blck_vce_Range,Num,8,BEST12. F12.,nbr_blocked_calls_voice (Failed Calls)    ,
+61,blck_dat_Range,Num,8,BEST12. F12.,nbr_blocked_calls_data (Failed Calls)    ,
+62,unan_vce_Range,Num,8,BEST12. F12.,nbr_unanswered_calls_voice      ,
+63,unan_dat_Range,Num,8,BEST12. F12.,nbr_unanswered_calls_data      ,
+64,plcd_vce_Range,Num,8,BEST12. F12.,nbr_calls_placed_voice (attempts)     ,
+65,plcd_dat_Range,Num,8,BEST12. F12.,nbr_calls_placed_data(attempts)      ,
+66,recv_vce_Range,Num,8,BEST12. F12.,nbr_calls_received_voice      ,
+67,recv_sms_Range,Num,8,BEST12. F12.,nbr_calls_received_sms      ,
+68,comp_vce_Range,Num,8,BEST12. F12.,nbr_calls_completed_voice      ,
+69,comp_dat_Range,Num,8,BEST12. F12.,nbr_calls_completed_data      ,
+70,custcare_Range,Num,8,BEST12. F12.,Customer Care Calls    ,
+71,ccrndmou_Range,Num,8,BEST12. F12.,Customer Care Rounded MOU   ,
+72,cc_mou_Range,Num,8,BEST12. F12.,nbr_unrnd_MOU_cust_care_calls      ,
+73,inonemin_Range,Num,8,BEST12. F12.,Inbound Calls Less Than One Minute ,
+74,threeway_Range,Num,8,BEST12. F12.,Three Way Calls    ,
+75,mou_cvce_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_completed_voice_calls      ,
+76,mou_cdat_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_completed_data_calls      ,
+77,mou_rvce_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_received_voice_calls      ,
+78,owylis_vce_,Num,8,BEST12. F12.,nbr_outbound_wylis2wylis_voice_calls Range     ,
+79,mouowylisv_,Num,8,BEST12. F12.,nbr_unrnd_mou_outbnd_wylis2wylis_voice_call range     ,
+80,iwylis_vce_,Num,8,BEST12. F12.,nbr_inbound_wylis2wylis_voice_call Range     ,
+81,mouiwylisv_,Num,8,BEST12. F12.,nbr_unrnd_mou_inbnd_wylis2wylis_voice_calls range     ,
+82,peak_vce_Range,Num,8,BEST12. F12.,nbr_peak_voice_calls (inbnd & outbnd)   ,
+83,peak_dat_Range,Num,8,BEST12. F12.,nbr_peak_data_calls      ,
+84,mou_peav_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_peak_voice_calls      ,
+85,mou_pead_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_peak_data_calls      ,
+86,opk_vce_Range,Num,8,BEST12. F12.,nbr_off_peak_voice_calls      ,
+87,opk_dat_Range,Num,8,BEST12. F12.,nbr_off_peak_data_calls      ,
+88,mou_opkv_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_off_peak_voice_calls      ,
+89,mou_opkd_Range,Num,8,BEST12. F12.,nbr_unrnd_mou_off_peak_data_calls      ,
+90,drop_blk_Range,Num,8,BEST12. F12.,Drop/Block Calls     ,
+91,attempt_Range,Num,8,BEST12. F12.,Attempted Calls     ,
+92,complete_Range,Num,8,BEST12. F12.,Completed Calls     ,
+93,callfwdv_Range,Num,8,BEST12. F12.,Call Forward Calls    ,
+94,callwait_Range,Num,8,BEST12. F12.,Call Wait Calls    ,
+95,churn,Num,8,BEST12. F12.,Dependent Variable: Churn between 31-60 days after,
+96,months,Num,4,BEST12. F12.,Months in Service    ,
+97,uniqsubs,Num,4,BEST12. F12.,Number of Uniq Subs   ,
+98,actvsubs,Num,4,BEST12. F12.,Number of Active Subs   ,
+99,crtcount,Num,4,BEST12. F12.,Number of Courtesy Credits   ,Removed due to NA% > 5%
+100,new_cell,Char,1,$1. $1.,New Cell Phone User   ,
+101,crclscod,Char,2,$2. $2.,Credit Class Code    ,
+102,asl_flag,Char,1,$F1. $F1.,Account Spending Limits    ,
+103,rmcalls,Num,8,F12. F12.,Roaming Calls     ,Removed due to NA% > 5%
+104,rmmou,Num,8,F14.2 F14.2,RMMOU      ,Removed due to NA% > 5%
+105,rmrev,Num,8,F13.2 F13.2,RMREV      ,Removed due to NA% > 5%
+106,totcalls,Num,4,F12. F12.,TOTCALLS      ,
+107,totmou,Num,8,F12.7 F12.,TOTMOU      ,
+108,totrev,Num,8,F13.2 F13.2,TOTREV      ,Boruta confirmed
+109,adjrev,Num,8,BEST12. F12.,adjusted revenue     ,
+110,adjmou,Num,8,BEST12. F12.,adjusted minutes of usage   ,
+111,adjqty,Num,8,BEST12. F12.,adjusted quantity of calls   ,
+112,avgrev,Num,8,BEST12. F12.,average revenue     ,Boruta confirmed
+113,avgmou,Num,8,BEST12. F12.,average minutes of use   ,
+114,avgqty,Num,8,BEST12. F12.,average number of calls   ,
+115,avg3mou,Num,4,BEST12. F12.,Subs Last 3 months avg: MOU ,Boruta confirmed
+116,avg3qty,Num,4,BEST12. F12.,Subs Last 3 months avg: QTY ,
+117,avg3rev,Num,4,BEST12. F12.,Subs Last 3 months avg: REV ,
+118,avg6mou,Num,4,BEST12. F12.,Subs Last 6 months avg: MOU ,Boruta confirmed
+119,avg6qty,Num,4,BEST12. F12.,Subs Last 6 months avg: QTY ,
+120,avg6rev,Num,4,BEST12. F12.,Subs Last 6 months avg: REV ,
+121,REF_QTY,Num,8,F5. F5.,Total Number of Referrals   ,Removed due to NA% > 5%
+122,tot_ret,Num,8,BEST12. F12.,Total Calls into Retention Team  ,Removed due to NA% > 5%
+123,tot_acpt,Num,8,BEST12. F12.,Total Offers Accepted From Retention Team ,Removed due to NA% > 5%
+124,prizm_social_,Char,2,$F2. $F2.,Social Group Letter Only one  ,Removed due to NA% > 5%
+125,div_type,Char,3,$F3. $3.,Division Type Code    ,Removed due to NA% > 5%
+126,csa,Char,10,$10. $10.,Communications Service Area    ,
+127,area,Char,30,$F30. $F30.,Area      ,
+128,dualband,Char,1,$F1. $F1.,Dualband      ,
+129,refurb_new,Char,1,$F1. $F1.,Handset Refurb or New   ,
+130,hnd_price,Num,8,DOLLAR16.15 F10.,Handset Price     ,Missing data pattern count = 0.007 but still removed
+131,pre_hnd_price,Num,8,DOLLAR16.15 F10.,Previous Handset Price    ,Removed due to NA% > 5%
+132,phones,Num,4,BEST12. F12.,# Handsets Issued    ,
+133,last_swap,Num,4,MMDDYY10. F10.,Date of Last Phone Swap  ,Removed due to NA% > 5%
+134,models,Num,4,BEST12. F12.,# Models Issued    ,
+135,hnd_webcap,Char,4,$F4. $F4.,Handset Web Capable    ,Boruta confirmed
+136,truck,Char,1,$F1. $F1.,Truck Indicator     ,Removed because missing data pattern count > 0.007
+137,mtrcycle,Char,1,$F1. $F1.,Motorcycle Indicator     ,Removed because missing data pattern count > 0.007
+138,rv,Char,1,$F1. $F1.,RV Indicator     ,Removed because missing data pattern count > 0.007
+139,occu1,Char,1,$F1. $F1.,Occupation for 1st Individual   ,Removed due to NA% > 5%
+140,ownrent,Char,1,$F1. $F1.,Home Owner/Renter Status    ,Removed due to NA% > 5%
+141,lor,Char,2,$F2. $F2.,Length of Residence    ,Removed due to NA% > 5%
+142,dwlltype,Char,1,$F1. $F1.,Dwelling Unit Type    ,Removed due to NA% > 5%
+143,marital,Char,1,$F1. $F1.,Marital Status     ,Removed because missing data pattern count > 0.007
+144,mailordr,Char,1,$F1. $F1.,Mail Order Buyer    ,Removed due to NA% > 5%
+145,age1,Char,2,$F2. $F2.,Age of 1st household member  ,Removed because missing data pattern count > 0.007
+146,age2,Char,2,$F2. $F2.,Age of 2nd household member  ,Removed because missing data pattern count > 0.007
+147,wrkwoman,Char,1,$F1. $F1.,Working Woman in HH   ,Removed due to NA% > 5%
+148,mailresp,Char,1,$F1. $F1.,Mail Responder     ,Removed due to NA% > 5%
+149,children,Char,1,$F1. $F1.,Children present in HH   ,Removed due to NA% > 5%
+150,adults,Char,1,$F1. $F1.,Number of Adults in HH  ,Removed due to NA% > 5%
+151,infobase,Char,1,$F1. $F1.,Infobase Match     ,Removed due to NA% > 5%
+152,income,Char,1,$F1. $F1.,Estimated Income     ,Removed due to NA% > 5%
+153,numbcars,Char,1,$F1. $F1.,Known Number of Vehicles   ,Removed due to NA% > 5%
+154,cartype,Char,1,$F1. $F1.,Dominant Vehicle Lifestyle    ,Removed due to NA% > 5%
+155,HHstatin,Char,1,$F1. $F1.,Prem Household Status Ind   ,Removed due to NA% > 5%
+156,mailflag,Char,1,$F1. $F1.,DMA Do Not Mail Flag  ,Removed due to NA% > 5%
+157,solflag,Char,1,$F1. $F1.,Infobase No Phone Sol Flag  ,Removed due to NA% > 5%
+158,dwllsize,Char,1,$F1. $F1.,Dwelling Size     ,Removed due to NA% > 5%
+159,forgntvl,Char,1,$F1. $F1.,Foreign Travel Dummy Var   ,Removed because missing data pattern count > 0.007
+160,educ1,Char,1,$F1. $F1.,Education for 1st Individual   ,Removed due to NA% > 5%
+161,proptype,Char,1,$F1. $F1.,Property Type Detail    ,Removed due to NA% > 5%
+162,pcowner,Char,1,$F1. $F1.,PC Owner Dummy Var   ,Removed due to NA% > 5%
+163,ethnic,Char,1,$F1. $F1.,Ethnicity Roll-Up Code    ,Removed because missing data pattern count > 0.007
+164,kid0_2,Char,1,$F1. $F1.,Kid 0-2 years of age in HH,Removed because missing data pattern count > 0.007
+165,kid3_5,Char,1,$F1. $F1.,Kid 3-5 years of age in HH,Removed because missing data pattern count > 0.007
+166,kid6_10,Char,1,$F1. $F1.,Kid 6-10 years of age in HH,Removed because missing data pattern count > 0.007
+167,kid11_15,Char,1,$F1. $F1.,Kid 11-15 years of age in HH,Removed because missing data pattern count > 0.007
+168,kid16_17,Char,1,$F1. $F1.,Kid 16-17 years of age in HH,Removed because missing data pattern count > 0.007
+169,creditcd,Char,1,$F1. $F1.,Credit Card Indicator    ,Removed because missing data pattern count > 0.007
+170,car_buy,Char,7,$F7. $F7.,New or Used car buyer  ,Removed because missing data pattern count > 0.007
+171,retdays,Num,8,BEST12. F12.,Number of days since last rentition call,Removed due to NA% > 5%
+172,eqpdays,Num,8,BEST12. F12.,Number of days of the current equipment,Boruta confirmed
+173,Customer_ID,Num,8,BEST12. F12.,Unique tournament specific customer ID  ,
