@@ -89,3 +89,24 @@ write.table(pattern_data, "/Users/Alok/Desktop/churn_boruta_cleaned_50-100k.csv"
 
 
 print(boruta.train)
+  
+  
+#Creating test and training set 
+
+train_data <-data.frame(pattern_data[1:70000,])
+test_data <-data.frame(pattern_data[70001:100000,])
+
+#Removing all non-numeric terms
+t <-train_data[sapply(train_data,is.numeric)]
+
+#making churn as the first column
+t <-t1k[c(93,1:92,94:115)]
+t <-train_data[c(93,1:92,94:115)]
+
+#implementing PCA therefore scaling the datapoints with mean 0 and variance 1
+log.t <-scale(t[,2:115])
+t.churn <-t[,1]
+t.pca <-prcomp(log.t,center=TRUE,scale. = TRUE)
+
+#plot usefull to decide how many PC's to retain 
+plot(t.pca,type="l")
