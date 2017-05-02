@@ -99,7 +99,8 @@ confirmedAttributeNames <- rownames(boruta.dfConfirmed, do.NULL = TRUE, prefix =
 
 # save boruta cleaned data with final number of variables as csv
 final_data = pattern_data[, names(pattern_data) %in% c(confirmedAttributeNames)]
-write.table(pattern_data, "churn_boruta_cleaned_100k.csv", sep = "\t") 
+final_data = as.data.frame(final_data)
+write.csv(final_data, file = "churn_boruta_cleaned_100k.csv",row.names=FALSE)
 
 # -----------------------------------------------------------------
 # ----------------------FOR CHECKING PURPOSE-----------------------
