@@ -77,7 +77,7 @@ axis(side = 1,las=2,labels = names(Labels), at = 1:ncol(boruta.train$ImpHistory)
 # dealing with tentative attributes
 final.boruta <- TentativeRoughFix(boruta.train)
 print(final.boruta)
-# plot variable importance graph
+# plot final variable importance graph
 plot(final.boruta, xlab = "", xaxt = "n")
 lz<-lapply(1:ncol(final.boruta$ImpHistory), function(i)final.boruta$ImpHistory[is.finite(final.boruta$ImpHistory[,i]),i])
 names(lz) <- colnames(final.boruta$ImpHistory)
@@ -94,11 +94,11 @@ print(boruta.df)
 write.csv(boruta.df, "C:/Users/ABS/Documents/R/churn-project/borutaAttributeStats_final.csv") 
 
 # filter only boruta confirmed attributes and get list of confirmed attribute names
-boruta.dfConfirmed <- subset(boruta.df,  boruta.df$decision == "Confirmed")
+boruta.dfConfirmed <- subset(boruta.df,  c(boruta.df$decision == "Confirmed"))
 confirmedAttributeNames <- rownames(boruta.dfConfirmed, do.NULL = TRUE, prefix = "row")
 
 # save boruta cleaned data with final number of variables as csv
-final_data = pattern_data[, names(pattern_data) %in% c(confirmedAttributeNames)]
+final_data = pattern_data[, names(pattern_data) %in% c(confirmedAttributeNames, "churn", "Customer_ID")]
 final_data = as.data.frame(final_data)
 write.csv(final_data, file = "churn_boruta_cleaned_100k.csv",row.names=FALSE)
 
