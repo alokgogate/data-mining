@@ -97,9 +97,11 @@ summary(clean_data)
 
 
 library(xlsx)
+boruta.dfConfirmed <- subset(boruta.df,  c(boruta.df$decision == "Confirmed"))
+confirmedAttributeNames <- rownames(boruta.dfConfirmed, do.NULL = TRUE, prefix = "row")
+write.csv(boruta.df, file = "borutaAttributeStats_1k.csv")
 
-final_data = pattern_data[, names(pattern_data) %in% c("rev_Mean", "mou_Mean", "totmrc_Mean", 
-"mou_Range", "mou_cvce_Mean", "mou_rvce_Mean", "owylis_vce_Mean", "mouowylisv_Mean", 
-"totrev", "avgrev", "avg3mou", "avg6mou", "hnd_webcap", "eqpdays")]
+final_data = pattern_data[, names(pattern_data) %in% c(confirmedAttributeNames, "churn", "Customer_ID")]
 
-write.table(pattern_data, "churn_boruta_cleaned_1k.csv") 
+final_data = as.data.frame(final_data)
+write.csv(final_data, file = "churn_boruta_cleaned_1k.csv",row.names=FALSE)

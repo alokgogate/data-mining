@@ -98,8 +98,9 @@ boruta.dfConfirmed <- subset(boruta.df,  boruta.df$decision == "Confirmed")
 confirmedAttributeNames <- rownames(boruta.dfConfirmed, do.NULL = TRUE, prefix = "row")
 
 # save boruta cleaned data with final number of variables as csv
-final_data = pattern_data[, names(pattern_data) %in% c(confirmedAttributeNames)]
-write.table(pattern_data, "churn_boruta_cleaned_1-50k.csv") 
+final_data = pattern_data[, names(pattern_data) %in% c(confirmedAttributeNames, "churn", "Customer_ID")]
+final_data = as.data.frame(final_data)
+write.csv(final_data, file = "churn_boruta_cleaned_50k.csv",row.names=FALSE)
 
 # -----------------------------------------------------------------
 # ----------------------FOR CHECKING PURPOSE-----------------------
