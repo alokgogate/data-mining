@@ -5,7 +5,6 @@ library(rpart)
 library(rpart.plot)
 library(randomForest) #random forest library
 library(leaps)
-library(amelia) #missing map library
 # neural net libraries
 library(MASS)
 library(neuralnet)
@@ -15,25 +14,16 @@ library(plyr)   # progress bar library
 # -----------------------------------------------------------------
 #               READ DATA AND CHECK FOR MISSING VALUES
 # -----------------------------------------------------------------
+# read 100k data - drop customer ID
+churn_100k <- final_data[complete.cases(final_data),]
+churn_100k <- churn_100k[, !names(churn_100k) %in% c("Customer_ID")]
 
-# read 1k and 100k data
-churn_1k <- read_csv("churn_boruta_cleaned_1k.csv", na = "null")
-# remove categorical variable for now - TODO: CONVERT TO NUMERIC
-churn_1k <- churn_1k[, !names(churn_1k) %in% c("hnd_webcap", "Customer_ID")]
+# create subset of 1k for test purpose
+churn_1k <- subset(churn_100k[1:1000,])
 
-churn_100k <- read_csv("cleaned_data_final.csv")
-churn_100k <- churn_100k[, !names(churn_100k) %in% c("X1","Customer_ID")]
-
-# check for missing rows - 1k
+# check for missing rows - if FALSE then make sure your workspace has final_data in it
 any(is.na(churn_1k))
-missMap_1k = missmap(churn_1k, col = c("red", "green"))
-missingData_1k <- churn_1k[rowSums(is.na(churn_1k)) > 0,]
-
-# check for missing rows - 100k
-# for 100k data, 6 missing rows are still there
 any(is.na(churn_100k))
-missMap_100k = missmap(churn_100k, col = c("red", "green"))
-missingData_100k <- churn_100k[rowSums(is.na(churn_100k)) > 0,]
 
 # -----------------------------------------------------------------
 #         SCALE DATA, CREATE TEST/TRAIN SETS
@@ -72,7 +62,7 @@ glm.mse
 # are removed or filled in
 randomForest = randomForest(churn ~., data = churn_1k, importance = TRUE)
 varImpPlot(randomForest, main = "Random Forest Variable Importance Plot")
-importance(randomForest)
+
 # -----------------------------------------------------------------
 #                 NEURAL NETWORK MODEL
 # -----------------------------------------------------------------
