@@ -26,6 +26,7 @@ cleaned_data[,convert] <- data.frame(apply(cleaned_data[convert], 2, as.factor))
 pMiss <- function(x){sum(is.na(x))/length(x)*100}
 apply(cleaned_data,2,pMiss)
 apply(cleaned_data,1,pMiss)
+
 # remove features with high NA% - variables reduced to 141
 cleaned_data = cleaned_data[, !names(cleaned_data) %in% c("crtcount", "rmcalls", "rmmou",  
 "rmrev", "REF_QTY", "tot_ret", "tot_acpt", "prizm_social_one", "div_type", "pre_hnd_price",
@@ -41,9 +42,8 @@ md.pattern(cleaned_data)
 aggr_plot <- aggr(cleaned_data, col=c('navyblue','red'), numbers=TRUE, sortVars=TRUE, labels=names(cleaned_data), cex.axis=.7, gap=3, ylab=c("Histogram of missing data","Pattern"))
 # remove features with missing count higher than 0.003 - variables reduced to 123
 pattern_data = cleaned_data
-pattern_data = pattern_data[, !names(pattern_data) %in% c("avg6mou", "avg6qty", "avg6rev", "truck", "mtrcycle", "rv", "marital",
-"age1", "age2", "forgntvl", "ethnic", "kid0_2", "kid3_5", "kid6_10", "kid11_15", "kid16_17",
-"creditcd", "car_buy")]
+pattern_data = pattern_data[, !names(pattern_data) %in% c("hnd_webcap", "avg6mou", "avg6qty", "avg6rev", "truck", "mtrcycle", "rv", "marital",
+"age1", "age2", "forgntvl", "ethnic", "kid0_2", "kid3_5", "kid6_10", "kid11_15", "kid16_17", "creditcd", "car_buy")]
 
 # -----------------------------------------------------------------
 # -------------------------NA ROW OMISSION-------------------------
