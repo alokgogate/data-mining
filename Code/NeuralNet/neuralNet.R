@@ -170,7 +170,7 @@ boxplot(nn.cv,xlab='CV MSE',col='cyan',
         border='blue',names='CV Error (MSE)',
         main='Cross Validation Error for NN', horizontal=TRUE)
 
-# -----------------------------------------------------------------
+-# -----------------------------------------------------------------
 # PLOTS TO SEE WHICH VARIABLES AFFECT OUTPUT MOST
 # ignore for now...need to test things here
 # -----------------------------------------------------------------
