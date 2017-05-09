@@ -8,3 +8,9 @@ PS - only exception is dualband which needs to be converted to boolean instead o
 Dualband conversion to T/F is done
 
 blah
+
+
+
+###Link to the competition 
+
+https://www.kaggle.com/sukritimishra/attrition-rate-of-a-teleco/discussion
